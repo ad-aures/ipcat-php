@@ -1,0 +1,30 @@
+{
+  "name": "adaures/ipcat-php",
+  "description": "Categorization of IP Addresses adapted to PHP 5.4+ from https://github.com/client9/ipcat",
+  "homepage": "https://code.castopod.org/ad-aures/ipcat-php",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Benjamin Bellamy",
+      "email": "ben@castopod.org",
+      "homepage": "https://code.castopod.org/benjamin"
+    },
+    {
+      "name": "Yassine Doghri",
+      "email": "yassine@doghri.fr",
+      "homepage": "https://code.castopod.org/yassine"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AdAures\\Ipcat\\": ""
+    }
+  },
+  "require": {
+    "php": ">=5.4"
+  },
+  "scripts": {
+    "post-install-cmd": "@php src/IpDbGenerate.php > src/IpDb.php",
+    "post-update-cmd": "@php src/IpDbGenerate.php > src/IpDb.php"
+  }
+}
