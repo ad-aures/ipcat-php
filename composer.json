@@ -1,7 +1,7 @@
 {
   "name": "adaures/ipcat-php",
   "description": "Categorization of IP Addresses adapted to PHP 5.4+ from https://github.com/client9/ipcat",
-  "homepage": "https://code.castopod.org/ad-aures/ipcat-php",
+  "homepage": "https://code.castopod.org/adaures/ipcat-php",
   "license": "GPL-3.0-only",
   "authors": [
     {
